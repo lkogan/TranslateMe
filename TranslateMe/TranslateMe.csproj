@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="src\app\iframe-tracker.directive.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AfominDotCom.NgProjectTemplate.Server" Version="1.0.5" />
   </ItemGroup>
 
@@ -14,6 +18,10 @@
     <None Include=".gitignore" />
     <None Include="README.md" />
     <None Include="package.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\iframe-tracker.directive.ts" />
   </ItemGroup>
 
   <PropertyGroup>

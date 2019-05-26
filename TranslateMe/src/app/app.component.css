@@ -1,0 +1,22 @@
+mat-sidenav {
+  width: 400px;
+}
+
+.translation-form {
+  min-width: 150px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.element-full-width {
+  width: 90%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.translation-frame {
+  width: 360px;
+  height: 80vh;
+  padding-left: 15px;
+  padding-right: 15px
+}
