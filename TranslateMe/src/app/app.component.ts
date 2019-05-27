@@ -17,8 +17,9 @@ export class AppComponent implements OnInit {
   //url: string = "https://lamula.pe/";
   //url: string = "https://laraza.com/";
   url: string = "https://www.univision.com/noticias";
+  //url: string = "https://www.glassdoor.com";
   urlSafe: SafeResourceUrl;
-  translationUrl: string = "https://context.reverso.net/translation/spanish-english/saber";
+  translationUrl: string = "https://context.reverso.net/translation/spanish-english/";
   translationUrlSafe: SafeResourceUrl;
 
   constructor(public sanitizer: DomSanitizer, private httpClient: HttpClient) { }
@@ -29,7 +30,13 @@ export class AppComponent implements OnInit {
   }
 
   urlUpdate(value: string): void {
-    console.log("Searching value: " + value);
+
+    if (!/^https?:\/\//i.test(value)) {
+      value = 'https://' + value;
+    }
+
+    this.url = value;
+    this.urlSafe = this.sanitizer.bypassSecurityTrustResourceUrl(value);
   }
    
   click() {

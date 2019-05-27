@@ -6,6 +6,7 @@ import { IframeTrackerDirective } from './iframe-tracker.directive';
 import { SafePipe } from './safe.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import {
   MatSidenavModule,
   MatButtonModule,
@@ -25,6 +26,7 @@ import {
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
     HttpClientModule,
     MatSidenavModule,
     MatButtonModule,

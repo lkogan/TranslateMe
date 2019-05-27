@@ -16,11 +16,10 @@
     </h1>
     <form class="translation-form">
       <mat-form-field class="element-full-width">
-        <input matInput placeholder="Enter link to view on the left" (keydown.enter)="urlUpdate(this.value)"/>
+        <input matInput placeholder="Enter link to view on the left" [value]="url" #link (keydown.enter)="urlUpdate(link.value)" />
       </mat-form-field>
-    </form>
+    </form>    
     <iframe id="iframe" [src]="translationUrlSafe" class="translation-frame" frameBorder="0"></iframe>
-
   </mat-sidenav>
 </mat-sidenav-container>
 <router-outlet></router-outlet>
