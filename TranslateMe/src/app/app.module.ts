@@ -11,7 +11,9 @@ import {
   MatSidenavModule,
   MatButtonModule,
   MatFormFieldModule,
-  MatInputModule
+  MatInputModule,
+  MatMenuModule,
+  MatIconModule
 } from '@angular/material';
 
 
@@ -31,7 +33,9 @@ import {
     MatSidenavModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatMenuModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
